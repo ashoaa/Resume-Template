@@ -357,7 +357,11 @@ button {
   animation: image--in 0.7s ease-out forwards;
   max-height: 410px;
 }
-
+.btn-next:hover,
+.btn-prev:hover,
+.bull:hover {
+  transform: scale(1);
+}
 @keyframes image--in {
   from {
     opacity: 0.5;
