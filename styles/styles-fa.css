@@ -148,8 +148,9 @@ header {
 .navigation-mobile .language > i {
   margin-right: 0.5rem;
 }
-.expanded {
-  animation: --expand 1.5s ease-out forwards;
+
+.expanded-header {
+  animation: --expand 0.8s ease-out forwards;
 }
 
 .collapsed {
@@ -359,7 +360,7 @@ button {
 @keyframes image--in {
   from {
     opacity: 0.5;
-    transform: translateX(-50px);
+    transform: translateX(35px);
   }
   to {
     opacity: 1;
@@ -370,7 +371,7 @@ button {
 @keyframes text--in {
   from {
     opacity: 0.5;
-    transform: translateX(50px);
+    transform: translateX(-35px);
   }
   to {
     opacity: 1;
@@ -635,7 +636,9 @@ footer a {
   .education__degree__text {
     font-size: var(--font-size-text-desktop);
   }
-
+  .expanded {
+    animation: --expand 1.5s ease-out forwards;
+  }
   /* projects section */
 
   .main-project {
