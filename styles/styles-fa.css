@@ -149,7 +149,7 @@ header {
   margin-right: 0.5rem;
 }
 .expanded {
-  animation: --expand 0.6s forwards;
+  animation: --expand 1.5s ease-out forwards;
 }
 
 .collapsed {
@@ -341,7 +341,7 @@ button {
   font-size: var(--font-size-text-mobile);
   min-height: 300px;
   margin-bottom: 2.5rem;
-  animation: text--in 0.7s forwards;
+  animation: text--in 0.7s ease-out forwards;
 }
 
 .project__image__cont {
@@ -352,7 +352,7 @@ button {
   padding: 0;
   margin-top: 3.5rem;
   width: 100%;
-  animation: image--in 0.7s forwards;
+  animation: image--in 0.7s ease-out forwards;
   max-height: 410px;
 }
 
@@ -465,7 +465,7 @@ button {
 }
 
 .Animation {
-  animation: progress 1.8s forwards;
+  animation: progress 1.3s ease-out forwards;
 }
 
 @keyframes progress {
