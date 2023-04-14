@@ -253,6 +253,9 @@ button {
   background-color: #ffffff00;
 }
 
+.expanded {
+  animation: --expand 1.5s ease-out forwards;
+}
 /* education section */
 
 .education {
@@ -636,9 +639,7 @@ footer a {
   .education__degree__text {
     font-size: var(--font-size-text-desktop);
   }
-  .expanded {
-    animation: --expand 1.5s ease-out forwards;
-  }
+
   /* projects section */
 
   .main-project {
