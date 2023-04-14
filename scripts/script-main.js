@@ -3,14 +3,14 @@ function content() {
   const content = document.querySelectorAll(".content-menu div");
   const content_icon = document.getElementById("content-icon");
 
-  if (content_menu[0].classList[1] === "expanded-header") {
+  if (content_menu[0].classList[1] === "expanded") {
     content_menu[0].classList.add("collapsed");
-    content_menu[0].classList.remove("expanded-header");
+    content_menu[0].classList.remove("expanded");
     content_menu[0].style.overflow = "hidden";
     content_icon.innerHTML = "&equiv;";
   } else {
     content_menu[0].classList.remove("collapsed");
-    content_menu[0].classList.add("expanded-header");
+    content_menu[0].classList.add("expanded");
     content_menu[0].style.overflow = "visible";
     content_icon.innerHTML = "&times;";
   }

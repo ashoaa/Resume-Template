@@ -134,9 +134,8 @@ header {
 .navigation-mobile .language > i {
   margin-right: 0.5rem;
 }
-
-.expanded-header {
-  animation: --expand 0.8s ease-out forwards;
+.expanded {
+  animation: --expand 1.5s ease-out forwards;
 }
 
 .collapsed {
@@ -296,10 +295,6 @@ button {
 .education__degree__abstract {
   max-height: 0;
   overflow: hidden;
-}
-
-.expanded {
-  animation: --expand 1.5s ease-out forwards;
 }
 
 /* projects section */
