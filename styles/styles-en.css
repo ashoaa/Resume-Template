@@ -37,6 +37,11 @@ div {
   color: var(--text-color);
 }
 
+i {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -240,7 +245,7 @@ button {
 }
 
 .expanded {
-  animation: --expand 1.5s ease-out forwards;
+  animation: --expand 1s ease-out forwards;
 }
 /* education section */
 
@@ -285,6 +290,13 @@ button {
 .education__degree__text {
   font-size: var(--font-size-text-mobile);
   padding: 0 1rem;
+}
+
+.education__project__title {
+  display: block;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
 }
 
 .education__degree__text > p {
@@ -624,6 +636,9 @@ footer a {
     font-size: var(--font-size-text-desktop);
   }
 
+  .education__project__title {
+    font-size: 1.2rem;
+  }
   /* projects section */
 
   .main-project {
