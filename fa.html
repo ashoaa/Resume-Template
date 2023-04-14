@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>احمد شعاع حقیقی</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/styles-fa.css" />
+    <script
+      src="https://kit.fontawesome.com/ae57e02cc3.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- header element -->
+    <header>
+      <div class="navigation-mobile">
+        <div class="language">
+          <i class="fa-solid fa-globe"></i>
+          <a href="index.html">انگلیسی</a>
+        </div>
+        <div id="content-icon" onclick="content()">&equiv;</div>
+      </div>
+      <div class="content-menu">
+        <div>
+          <a href="#aboutme-section">درباره من</a>
+        </div>
+
+        <div>
+          <a href="#education-section">تحصیلات</a>
+        </div>
+
+        <div>
+          <a href="#project-section">پروژه ها</a>
+        </div>
+
+        <div>
+          <a href="#skill-section">مهارت ها</a>
+        </div>
+      </div>
+      <div class="navigation-desktop rtl">
+        <div class="language">
+          <i class="fa-solid fa-globe"></i>
+          <a href="index.html">انگلیسی</a>
+        </div>
+
+        <div>
+          <a href="#aboutme-section">درباره من</a>
+        </div>
+
+        <div>
+          <a href="#education-section">تحصیلات</a>
+        </div>
+
+        <div>
+          <a href="#project-section">پروژه ها</a>
+        </div>
+
+        <div>
+          <a href="#skill-section">مهارت ها</a>
+        </div>
+      </div>
+    </header>
+    <!-- h1 element -->
+    <h1>احمد شعاع حقیقی</h1>
+    <!-- aboutme section -->
+    <div id="aboutme-section" class="space">&nbsp;</div>
+    <div class="about">
+      <div class="about__image">
+        <img src="images/profile.jpeg" alt="Profile" />
+      </div>
+      <div class="about__text rtl">
+        <div class="about__heading"><h2>درباره من</h2></div>
+        <div class="about__text__body">
+          <p>
+            من یک فارغ التحصیل مهندسی پزشکی با بیش از 4 سال سابقه تحقیقاتی در
+            زمینه پردازش تصویر و پردازش سیگنال هستم. پردازش سیگنال ها و تصاویر
+            پزشکی از زمینه های مورد علاقه من است. من در زمینه های استنباط آماری
+            و مدل های رگرسیون، به خصوص در داده های fMRI دارای تجربه هستم. همچنین
+            دانش عمیقی در زمینه های شبکه های عصبی، یادگیری عمیق و یادگیری ماشین
+            دارم. من برای یادگیری زبان های جدید برنامه نویسی بسیار مشتفاق هستم.
+            این وب سایت به عنوان اولین پروژه وب من و با استفاده از HTML، CSS و
+            JavaScript طراحی شده و در
+            <a href="https://github.com/ashoaa/Resume-Template" target="_blank"
+              >گیت هاب من</a
+            >
+            قابل دسترسی است.
+          </p>
+        </div>
+
+        <div class="Button">
+          <div class="about__button">
+            <a href="#contact-section">
+              <button class="about__text__button">ارتباط با من</button>
+            </a>
+          </div>
+          <div class="cv__button">
+            <a href="/files/CV.pdf" download>
+              <button class="about__text__button">دانلود رزومه</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- education section -->
+    <div id="education-section" class="space">&nbsp;</div>
+    <div class="rtl"><h2>تحصیلات</h2></div>
+    <div class="education rtl">
+      <div class="education__degree">
+        <div class="education__degree__header">
+          <div class="education__degree__university__icon">
+            <img
+              src="icons/University_logo.png"
+              alt="University of Tehran logo"
+              srcset="" />
+          </div>
+          <div class="header__grid">
+            <div class="education__degree__university">
+              <p>دانشگاه تهران</p>
+            </div>
+
+            <div class="education__degree__date">
+              <p>تهران (1393-1398)</p>
+            </div>
+          </div>
+        </div>
+        <div class="education__degree__text">
+          <p><span class="bold">کارشناسی ارشد - مهندسی پزشکی</span></p>
+          <p>
+            <span class="bold margin"
+              >پروژه کارشناسی ارشد (شهریور 1401)<br
+            /></span>
+            <i class="project__title"
+              >"مقایسه BOLD-fMRI در حین یادگیری مشاهده ای مبتنی بر پیش بینی
+              دیگران با سیگنال های مرتبط با قضاوت دیگران"</i
+            >
+          </p>
+          <p class="read-more" onclick="readMore(0)">مطالعه بیشتر &darr;</p>
+          <div id="abstract" class="education__degree__abstract">
+            <p class="bold">چیکده</p>
+            <p>
+              در این مطالعه با استفاده از داده های fMRI اخذ شده از 46 شرکت کننده
+              که به صورت تصادفی در دو آزمایش پیش بینی و قضاوت (به طور مساوی)
+              شرکت کردند، داده های رفتاری و fMRI این دو گروه با هم مقایسه شده
+              است. برای تحلیل داده های رفتاری، از دو رویکرد بدون مدل و مبتنی بر
+              مدل و همچنین در تحلیل داده های fMRI، از ابزارهای ANTs ،FSL و
+              HD-BET استفاده شده است.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education__degree">
+        <div class="education__degree__header">
+          <div class="education__degree__university__icon">
+            <img
+              src="icons/University_logo.png"
+              alt="University of Tehran logo"
+              srcset="" />
+          </div>
+          <div class="header__grid">
+            <div class="education__degree__university">
+              <p>دانشگاه تهران</p>
+            </div>
+
+            <div class="education__degree__date">
+              <p>تهران (1401-1398)</p>
+            </div>
+          </div>
+        </div>
+        <div class="education__degree__text">
+          <p><span class="bold margin">کارشناسی - مهندسی برق</span></p>
+          <p>
+            <span class="bold margin">پروژه کارشناسی (تیر 1398)<br /></span>
+            <i class="project__title"
+              >"تحلیل تصاویر QCT بیماران ضایعه نخاعی جهت کمی سازی تأثیر تمرین
+              های فیزیوتراپی"</i
+            >
+          </p>
+          <p class="read-more" onclick="readMore(1)">مطالعه بیشتر &darr;</p>
+          <div id="abstract" class="education__degree__abstract">
+            <p class="bold">چیکده</p>
+            <p>
+              هدف این مطالعه، محاسبه تراکم استخوان های ران و ساق پا در تصاویر
+              QCT و همچنین تخمین ضخامت استخوان کورتیکال، با استفاده از روش های
+              پردازش تصویر در MATLAB بود. برای ایجاد نواحی مطلوب و بخش بندی
+              استخوان، از روش های آستانه گذاری سراسری، بهبود لبه، رشد ناحیه و
+              عملگرهای مورفولوژی (برای پس پردازش) جهت رسیدن به نتایج دقیق
+              استفاده شده است.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- projects section -->
+    <div id="project-section" class="space">&nbsp;</div>
+    <div class="rtl"><h2>پروژه ها</h2></div>
+    <div class="main-project rtl">
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">پیاده سازی تخمین عمق در تصاویر استریو</p>
+          <p class="project__disc">
+            برای تخمین ماتریس اساسی با الگوریتم هشت نقطه ای، نقاط کلیدی با
+            استفاده از آشکارساز گوشه Harris شناسایی شده اند. در نهایت، مختصات سه
+            بعدی نقاط با استفاده از تخمین ماتریس دوربین و ماتریس اساسی محاسبه
+            شده اند.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/stereo-camera.png"
+            alt="stereo camera"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            تخمین فریم بعدی در انیمیشن آونگ معلق با استفاده از شبکه عصبی بازگشتی
+          </p>
+          <p class="project__disc">
+            پس از ساخت انیمیشن آونگ معلق در OpenCV، از یک شبکه عصبی مبتنی بر
+            انکودر-دیکودر با واحدهای LSTM، برای پیش بینی فریم بعدی استفاده شده
+            است.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/swinging-pendulum.png"
+            alt="swinging pendulum"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            ایجاد تصویر B-Mode اولتراسوند از داده های خام RF
+          </p>
+          <p class="project__disc">
+            تصاویر B-Mode از تبدیل خطوط RF به شکل بادبزنی، با اعمال تبدیل هیلبرت
+            و تغییر رنج دینامیکی ساخته شده اند. در نهایت برای افزایش تعداد خطوط
+            در تصویر، از درون یابی استفاده شده است.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/ultrasound-image.png"
+            alt="ultrasound image"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">فیلترینگ سیگنال خام ECG و استخراج موج P</p>
+          <p class="project__disc">
+            برای کاهش آرتیفکت و حذف نویز، داده های خام در دامنه فرکانسی فیلتر
+            شده اند. پس از پیش پردازش، موج P با استفاده از روش تطبیق نمونه
+            استخراج شده است.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/ecg.png" alt="ecg" class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            پیاده سازی مسئله مستقیم و مسئله معکوس برای داده ها شبیه سازی شده EEG
+            و MEG
+          </p>
+          <p class="project__disc">
+            داده های EEG و MEG با فرض مدل کروی برای سر شبیه سازی شده اند (مسئله
+            مستقیم). پس از شبیه سازی داده ها، مسئله مستقیم با استفاده از روش های
+            minimum-norm و regularized minimum-norm حل شده است.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/eeg-meg.png" alt="eeg-meg" class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            استخراج P300 برای شناسایی فرد گناهکار در آزمون اطلاعات مخفی شده
+          </p>
+          <p class="project__disc">
+            پس از فیلترینگ داده EEG، P300 با استفاده از میانگین گیری همزمانی
+            استخراج شده است. با مقایسه همبستگی P300 بین محرک های پروب و هدف با
+            همبستگی P300 بین محرک های پروب و نامربوط در هر کانال EEG، فرد
+            گناهکار شناسایی شده است.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/p300.png" alt="p300" class="project__image" />
+        </div>
+      </div>
+
+      <div class="project__nav">
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-angle-left btn-prev"
+            onclick="prev()"></i>
+        </div>
+
+        <div class="bull" onclick="bullClick(0)">&bull;</div>
+        <div class="bull" onclick="bullClick(1)">&bull;</div>
+        <div class="bull" onclick="bullClick(2)">&bull;</div>
+        <div class="bull" onclick="bullClick(3)">&bull;</div>
+        <div class="bull" onclick="bullClick(4)">&bull;</div>
+        <div class="bull" onclick="bullClick(5)">&bull;</div>
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-angle-right btn-next"
+            onclick="next()"></i>
+        </div>
+      </div>
+    </div>
+    <!-- skills section -->
+    <div id="skill-section" class="space">&nbsp;</div>
+    <div class="rtl"><h2>مهارت ها</h2></div>
+    <div class="skills rtl">
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> Matlab
+        </div>
+        <div class="skill__progress">
+          <div class="bar excellent">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> Python
+        </div>
+        <div class="skill__progress">
+          <div class="bar excellent">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> HTML</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> CSS</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> JavaScript
+        </div>
+        <div class="skill__progress">
+          <div class="bar intermediate">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> Java</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> C#</div>
+        <div class="skill__progress">
+          <div class="bar intermediate">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> MySQL</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> MongoDB
+        </div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> Git</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    <!-- footer element -->
+    <div id="contact-section" class="space">&nbsp;</div>
+    <footer id="contact">
+      <div class="contact__info">
+        <div class="contact__social">
+          <i class="fa-solid fa-envelope"></i>
+          <a
+            href="mailto:a.shoaahaghighi@gmail.com"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_top"
+            >a.shoaahaghighi@gmail.com</a
+          >
+        </div>
+        <div class="contact__social">
+          <i class="fa-brands fa-github"></i>
+          <a
+            href="https://github.com/ashoaa"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_blank"
+            >ashoaa</a
+          >
+        </div>
+
+        <div class="contact__social">
+          <i class="fa-brands fa-telegram"></i>
+          <a
+            href="https://t.me/ali_shoaa_haghighi"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_blank"
+            >@ali_shoaa_haghighi</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/scripts/script-main.js"></script>
+  <script src="/scripts/script-fa.js"></script>
+</html>

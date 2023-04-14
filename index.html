@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Shoaa Haghighi</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/styles-en.css" />
+    <script
+      src="https://kit.fontawesome.com/ae57e02cc3.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- header element -->
+    <header>
+      <div class="navigation-mobile">
+        <div class="language">
+          <i class="fa-solid fa-globe"></i>
+          <a href="fa.html">Persian</a>
+        </div>
+        <div id="content-icon" onclick="content()">&equiv;</div>
+      </div>
+      <div class="content-menu">
+        <div>
+          <a href="#aboutme-section">About me</a>
+        </div>
+
+        <div>
+          <a href="#education-section">Education</a>
+        </div>
+
+        <div>
+          <a href="#project-section">Projects</a>
+        </div>
+
+        <div>
+          <a href="#skill-section">Skills</a>
+        </div>
+      </div>
+      <div class="navigation-desktop">
+        <div class="language">
+          <i class="fa-solid fa-globe"></i>
+          <a href="fa.html">Persian</a>
+        </div>
+
+        <div>
+          <a href="#aboutme-section">About me</a>
+        </div>
+
+        <div>
+          <a href="#education-section">Education</a>
+        </div>
+
+        <div>
+          <a href="#project-section">Projects</a>
+        </div>
+
+        <div>
+          <a href="#skill-section">Skills</a>
+        </div>
+      </div>
+    </header>
+    <!-- h1 element -->
+    <h1>Ahmad Shoaa Haghighi</h1>
+    <!-- aboutme section -->
+    <div id="aboutme-section" class="space">&nbsp;</div>
+    <div class="about">
+      <div class="about__image">
+        <img src="images/profile.jpeg" alt="Profile" />
+      </div>
+      <div class="about__text">
+        <div class="about__heading"><h2>About Me</h2></div>
+        <div class="about__text__body">
+          <p>
+            I am a self-motivated biomedical engineer with more than four years
+            of research experience in image and signal processing. I am very
+            passionate about the field of medical imaging and image processing.
+            I have experience in statistical inference and regression models,
+            especially in fMRI data. I also have in-depth knowledge of neural
+            networks, machine learning, and deep learning. I am eager to learn
+            new programming languages to expand my skills for building new
+            projects. This website is created using HTML, CSS, and JavaScript as
+            my first web project (available on
+            <a href="https://github.com/ashoaa/Resume-Template" target="_blank"
+              >my GitHub</a
+            >).
+          </p>
+        </div>
+
+        <div class="Button">
+          <div class="about__button">
+            <a href="#contact-section">
+              <button class="about__text__button">Contact me</button>
+            </a>
+          </div>
+          <div class="cv__button">
+            <a href="/files/CV.pdf" download>
+              <button class="about__text__button">Download CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- education section -->
+    <div id="education-section" class="space">&nbsp;</div>
+    <h2>Education</h2>
+    <div class="education">
+      <div class="education__degree">
+        <div class="education__degree__header">
+          <div class="education__degree__university__icon">
+            <img
+              src="icons/University_logo.png"
+              alt="University of Tehran logo"
+              srcset="" />
+          </div>
+          <div class="header__grid">
+            <div class="education__degree__university">
+              <p>University of Tehran</p>
+            </div>
+
+            <div class="education__degree__date">
+              <p>Tehran, Iran (2019-2022)</p>
+            </div>
+          </div>
+        </div>
+        <div class="education__degree__text">
+          <p><span class="bold">M.Sc. in Biomedical Engineering</span></p>
+          <p>
+            <span class="bold">M.Sc. Project (September 2022) <br /></span>
+            <i class="project__title bold"
+              >"Comparison of BOLD-fMRI for Observational Learning Between
+              Prediction and Judgment of Another Agent"</i
+            >
+          </p>
+          <p class="read-more" onclick="readMore(0)">Read more &darr;</p>
+          <div id="abstract" class="education__degree__abstract">
+            <p class="bold">Abstract</p>
+            <p>
+              In this study,we acquire fMRI data from 46 participants which were
+              randomly assigned to judgment and preddiction experiments
+              (equally) to compare the behavoiral and fMRI data of these two
+              groups. For behavioral data analysis, we applied model-free and
+              model-based methods and for fMRI data analysis, FSL, ANTs, and
+              HD-BET were used.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education__degree">
+        <div class="education__degree__header">
+          <div class="education__degree__university__icon">
+            <img
+              src="icons/University_logo.png"
+              alt="University of Tehran logo"
+              srcset="" />
+          </div>
+          <div class="header__grid">
+            <div class="education__degree__university">
+              <p>University of Tehran</p>
+            </div>
+
+            <div class="education__degree__date">
+              <p>Tehran, Iran (2014-2019)</p>
+            </div>
+          </div>
+        </div>
+        <div class="education__degree__text">
+          <p><span class="bold">B.Sc. in Electrical Engineering</span></p>
+          <p>
+            <span class="bold">B.Sc. Project (July 2019)<br /></span>
+            <i class="project__title bold"
+              >"Analysis of QCT Images for Quantizing the Effect of
+              Physiotherapy Exercises on Patients with Spinal Cord Injury"</i
+            >
+          </p>
+          <p class="read-more" onclick="readMore(1)">Read more &darr;</p>
+          <div id="abstract" class="education__degree__abstract">
+            <p class="bold">Abstract</p>
+            <p>
+              This study aims to calculate BMD (Bone Mineral Density) by
+              processing QCT in femur and tibia and estimate cortical tickness
+              by using image processing methods in MATLAB. To create ROIs and
+              bone segmentation, global thresholding, edge enhancement, region
+              growing, and morphological operation (for post-processing) were
+              applied to achieve accurate results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- projects section -->
+    <div id="project-section" class="space">&nbsp;</div>
+    <h2>Projects</h2>
+    <div class="main-project">
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            Implementation of Depth Estimation in Stereo Images
+          </p>
+          <p class="project__disc">
+            To estimate the fundamental matrix by eight-point algorithm,
+            keypoints were detected using Harris corner detector. Finally, 3D
+            coordinates of points were calculated by estimated camera and
+            fundamental matrices.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/stereo-camera.png"
+            alt="stereo camera"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            Next-frame Prediction of Swinging Pendulum Animation Using a
+            Recurrent Neural Network
+          </p>
+          <p class="project__disc">
+            After creation of swinging pendulum animation in OpenCV, an
+            encoder-decoder based convolutional neural network with LSTM units
+            was used to predict next frames.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/swinging-pendulum.png"
+            alt="swinging pendulum"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            B-Mode Ultrasound Image Construction of Raw Measured RF Data
+          </p>
+          <p class="project__disc">
+            B-Mode images were constructed from rearranged RF lines to a fan
+            shape after applying Hilbert transformation and adjusting dynamic
+            range. Ultimately, interpolation was used to increase the number of
+            lines in the image.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img
+            src="images/ultrasound-image.png"
+            alt="ultrasound image"
+            class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            Raw ECG Signal Filtering and P-Wave Extraction
+          </p>
+          <p class="project__disc">
+            For artifact reduction and noise removal, raw data was filtered in
+            the frequency domain. After data pre-processing, P-wave extraction
+            was applied using template matching technique.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/ecg.png" alt="ecg" class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            Implementation of Forward Problem and Inverse Problem for Simulated
+            EEG and MEG Data
+          </p>
+          <p class="project__disc">
+            EEG and MEG data were simulated considering sphere head model
+            (forward problem). After data simulation, inverse problem was sloved
+            using minimum-norm and regularized minimum-norm solutions.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/eeg-meg.png" alt="eeg-meg" class="project__image" />
+        </div>
+      </div>
+
+      <div class="projects-container">
+        <div class="project__text">
+          <p class="project__title">
+            P300 Extraction to Detect Guilty Person in the Concealed Information
+            Test
+          </p>
+          <p class="project__disc">
+            After filtering of EEG data, P300 was extracted using synchronous
+            averaging. By comparing P300 correlation between probe stimuli and
+            target stimuli, and P300 correlation between probe stimuli and
+            irrelevant stimuli in each EEG channel, the guilty person was
+            detected.
+          </p>
+        </div>
+        <div class="project__image__cont">
+          <img src="images/p300.png" alt="p300" class="project__image" />
+        </div>
+      </div>
+
+      <div class="project__nav">
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-angle-left btn-prev"
+            onclick="prev()"></i>
+        </div>
+
+        <div class="bull" onclick="bullClick(0)">&bull;</div>
+        <div class="bull" onclick="bullClick(1)">&bull;</div>
+        <div class="bull" onclick="bullClick(2)">&bull;</div>
+        <div class="bull" onclick="bullClick(3)">&bull;</div>
+        <div class="bull" onclick="bullClick(4)">&bull;</div>
+        <div class="bull" onclick="bullClick(5)">&bull;</div>
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-angle-right btn-next"
+            onclick="next()"></i>
+        </div>
+      </div>
+    </div>
+    <!-- skills section -->
+    <div id="skill-section" class="space">&nbsp;</div>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> Matlab
+        </div>
+        <div class="skill__progress">
+          <div class="bar excellent">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> Python
+        </div>
+        <div class="skill__progress">
+          <div class="bar excellent">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> HTML</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> CSS</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> JavaScript
+        </div>
+        <div class="skill__progress">
+          <div class="bar intermediate">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> Java</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> C#</div>
+        <div class="skill__progress">
+          <div class="bar intermediate">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> MySQL</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name">
+          <span class="entitty">&bull;</span> MongoDB
+        </div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill__name"><span class="entitty">&bull;</span> Git</div>
+        <div class="skill__progress">
+          <div class="bar good">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    <!-- footer element -->
+    <div id="contact-section" class="space">&nbsp;</div>
+    <footer id="contact">
+      <div class="contact__info">
+        <div class="contact__social">
+          <i class="fa-solid fa-envelope"></i>
+          <a
+            href="mailto:a.shoaahaghighi@gmail.com"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_top"
+            >a.shoaahaghighi@gmail.com</a
+          >
+        </div>
+        <div class="contact__social">
+          <i class="fa-brands fa-github"></i>
+          <a
+            href="https://github.com/ashoaa"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_blank"
+            >ashoaa</a
+          >
+        </div>
+
+        <div class="contact__social">
+          <i class="fa-brands fa-telegram"></i>
+          <a
+            href="https://t.me/ali_shoaa_haghighi"
+            onmouseover="hover(this)"
+            onmouseout="notHover(this)"
+            target="_blank"
+            >@ali_shoaa_haghighi</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/scripts/script-main.js"></script>
+  <script src="/scripts/script-en.js"></script>
+</html>
