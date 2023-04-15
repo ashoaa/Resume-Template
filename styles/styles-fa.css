@@ -709,7 +709,7 @@ footer a {
     grid-template-columns: auto auto;
   }
   .skill {
-    grid-template-columns: 10rem 10rem;
+    grid-template-columns: 12rem 10rem;
     font-size: var(--font-size-text-desktop);
   }
   .entitty {
