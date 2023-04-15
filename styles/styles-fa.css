@@ -502,12 +502,12 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 290px;
+  height: 230px;
   background-color: var(--main-color);
   background-image: radial-gradient(#242424 1.25px, #141414 1.25px);
   background-size: 20px 20px;
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-  padding-top: 140px;
+  padding-top: 95px;
 }
 
 .footer-container {
