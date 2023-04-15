@@ -25,7 +25,6 @@ body {
   --contact-color: #6e6e6e;
   --body-margin-mobile: 1.2rem;
   --body-margin-desktop: 1.5rem;
-
   margin: 0;
   padding: 0;
 }
@@ -483,14 +482,20 @@ button {
 
 /* footer element */
 footer {
-  position: sticky;
-  top: 100%;
-  height: 35vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 290px;
   background-color: var(--main-color);
   background-image: radial-gradient(#242424 1.25px, #141414 1.25px);
   background-size: 20px 20px;
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-  padding-top: 14vh;
+  padding-top: 140px;
+}
+
+.footer-container {
+  position: relative;
 }
 
 .contact__info {
@@ -533,6 +538,7 @@ footer a {
   /* general */
   h2 {
     margin: 0 var(--body-margin-desktop) 0 var(--body-margin-desktop);
+
     font-size: 3rem;
   }
   p {
@@ -701,8 +707,8 @@ footer a {
 
   /* footer element */
   footer {
-    height: 45vh;
-    padding-top: 17vh;
+    height: 300px;
+    padding-top: 110px;
   }
 
   footer div,
