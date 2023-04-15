@@ -430,7 +430,7 @@ button {
   display: grid;
   grid-template-columns: 9rem 10rem;
   height: 2rem;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
   align-items: center;
 }
 
