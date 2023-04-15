@@ -166,6 +166,7 @@ header {
 
 /* h1 element */
 h1 {
+  text-shadow: 7px 7px 10px #9c9c9c;
   color: var(--heading-color);
   font-size: 2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
