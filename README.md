@@ -1,2 +1,2 @@
 # Resume-Template
-Resume website template using HTML, CSS, and JavaScript.
+Responsive resume website template using HTML, CSS, and JavaScript.
