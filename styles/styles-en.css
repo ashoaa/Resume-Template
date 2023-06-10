@@ -63,7 +63,7 @@ h2 {
 }
 
 .space {
-  margin: 100px 0 70px 0;
+  margin-bottom: 70px;
 }
 
 /* header element */
@@ -170,14 +170,14 @@ h1 {
   color: var(--heading-color);
   font-size: 2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 200px var(--body-margin-mobile) 100px var(--body-margin-mobile);
+  margin: 100px var(--body-margin-mobile) 0 var(--body-margin-mobile);
   text-align: center;
 }
 /* aboutme section */
 .about {
   padding: var(--body-margin-mobile);
   display: grid;
-  margin-bottom: 150px;
+  margin: var(--body-margin-mobile) 0;
   grid-template-rows: auto auto;
   row-gap: 2rem;
 }
@@ -250,7 +250,7 @@ button {
 
 .education {
   padding: 1rem 1rem 0 1rem;
-  margin: 1rem 0;
+  margin: var(--body-margin-mobile) 0;
 }
 
 .education > .education__degree {
@@ -586,6 +586,7 @@ footer a {
 
   /* h1 element */
   h1 {
+    margin: 100px var(--body-margin-mobile) 100px var(--body-margin-mobile);
     font-size: 5rem;
   }
   /* aboutme section */
@@ -693,6 +694,7 @@ footer a {
   }
   /* skills section */
   .skills {
+    margin-bottom: 150px;
     padding: 1rem var(--body-margin-desktop);
     width: auto;
     grid-template-columns: auto auto;
